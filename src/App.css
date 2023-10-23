@@ -1,38 +1,95 @@
-.App {
-  text-align: center;
+html{
+  background-color: #444;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+padding: 0;
+max-width: 1200px;
+margin: 0 auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#root {
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+header {
+  flex: 0 1 200px;
+  background-color: #e5d7cd;
+  padding: 15px;
+}
+
+main {
+  flex: 1;
+  padding: 0 15px;
+  background-color: white;
+}
+
+nav {
+  align-self: stretch;
+}
+
+.container_about_my {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.my_photo {
+  height: auto;
+  margin: 0;
+  padding: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.my_photo img{
+  width: 200px;
+  display: block;
+  border-radius: 10px;
+}
+
+.my_name{
+  display: inline-block;
+  text-align: left;
+  padding: 0 10px;
+  min-width: 160px;
+}
+
+@media screen and (max-width: 600px) {
+
+  header {
+      flex: 1 1 auto;
+      text-align: center;
   }
-  to {
-    transform: rotate(360deg);
+
+  #root {
+      flex-direction: column;
   }
+
+  nav ul {
+      display: flex;
+      flex-direction: row;
+      list-style-type: none;
+      padding: 0;
+      margin: 10px 0 0 0;
+      justify-content: space-around;
+  }
+
+  .container_about_my {
+      flex-direction: row;
+      justify-content: center;
+  }
+
+  .my_photo img {
+      width:120px;
+  }
+
+}
+
+main img {
+  width: 100px;
+  transition: transform .2s;
+}
+main img:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5);
 }
