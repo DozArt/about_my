@@ -1,6 +1,6 @@
-import my_project_1 from "./../images/Screenshot_bikeCRM.jpg"
-import my_project_2 from "./../images/Screenshot_bikeCRM_2.jpg"
-import my_project_3 from "./../images/Screenshot_bikeCRM_3.jpg"
+import my_project_1 from "./Screenshot_bikeCRM.jpg"
+import my_project_2 from "./Screenshot_bikeCRM_2.jpg"
+import my_project_3 from "./Screenshot_bikeCRM_3.jpg"
 
 function MyProject() {
   return (

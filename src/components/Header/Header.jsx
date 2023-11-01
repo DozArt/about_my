@@ -1,6 +1,6 @@
-import Avatar from "./Avatar";
-import MyName from "./MyName";
-import Navigation from "./Navigation";
+import Avatar from "./Avatar/Avatar";
+import MyName from "./MyName/MyName";
+import Navigation from "./Navigator/Navigation";
 
 function Header() {
   return (

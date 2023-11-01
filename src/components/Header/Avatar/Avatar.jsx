@@ -1,4 +1,4 @@
-import my_photo from "./../images/IMG_6662-fotor-20230909211739.jpg"
+import my_photo from "./IMG_6662-fotor-20230909211739.jpg"
 
 
 function Avatar() {

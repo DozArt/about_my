@@ -1,5 +1,5 @@
-import AboutMy from "./AboutMy";
-import MyProject from "./MyProject";
+import AboutMy from "./AboutMy/AboutMy";
+import MyProject from "./MyProject/MyProject";
 
 
 function Main() {
